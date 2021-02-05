@@ -1,8 +1,13 @@
 // complete the function
 function palindrom(str) {
   // code goes here
+  let modifiedStr = str.toLowerCase().replace();
+  let newWord = "";
+  for (let i = modifiedStr.length - 1; i >= 0; i--) {
+    newWord += modifiedStr[i];
+  }
+  return newWord === modifiedStr;
 }
-
 function solution(arg) {
   return palindrom(arg);
 }
